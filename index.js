@@ -14,7 +14,7 @@ function ObservStore (initial, constructor) {
   initial = initial || {}
 
   return Struct({
-    data: Hash(initial.data || {}, constructor || Observ),
+    data: Hash(initial.data || {}, constructor),
     ids: ObservArray(initial.ids || [])
   })
 }
