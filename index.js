@@ -40,5 +40,5 @@ function ids (array) {
 }
 
 function id (item) {
-  return item.id
+  return value(item.id)
 }
